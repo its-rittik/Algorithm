@@ -3,7 +3,7 @@ using namespace std;
 
 int subsequence_number = 1 ;
 
-//Time complixity : O(2^n) ; Space complixity : O(n)
+//Time complixity : O((2^n)*n) ; Space complixity : O(n)
 void SubSequence(int index , vector<int>&arr ,vector<int>&temp_arr){
     
     int n = arr.size();
