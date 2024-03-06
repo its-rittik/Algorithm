@@ -11,6 +11,7 @@ void printBinary(char c, int position, int bit_size) {
     cout << "Character: " << c << ", Binary code: " << binary << endl << endl;
 }
 
+// Generate code for every unique character with minimum bit size
 void generate_code(vector<pair<char,int>>& frequency){
     
     int bit_size=1;
@@ -25,6 +26,7 @@ void generate_code(vector<pair<char,int>>& frequency){
     }
 }
 
+//sort character according to the frequency
 void sort_the_char(vector<pair<char,int>>& frequency){
     
     for(int i = 0 ; i < frequency.size();i++){
@@ -36,6 +38,7 @@ void sort_the_char(vector<pair<char,int>>& frequency){
     generate_code(frequency);
 }
 
+//Count unique character and their frequency
 void count_frequency_of_unique_char(const string& str) {
     vector<pair<char, int>> frequency;
 
