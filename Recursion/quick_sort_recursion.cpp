@@ -13,7 +13,6 @@ int partition_index(vector<int>&arr , int low , int high){
         if(i<j) swap(arr[i] , arr[j]);
     }
     swap(arr[low] , arr[j]);
-
     return j;
 }
 
