@@ -20,5 +20,5 @@ int main(){
             cout<<" | "<< adj[i][j];
         }
         cout<<" | "<<endl;
-    }
+    }   
 }
