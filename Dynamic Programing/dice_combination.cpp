@@ -2,6 +2,7 @@
 #include<bits/stdc++.h>
 using  namespace std;
 
+/*
 int main(){
     const int mod = 1000000007  ;
 
@@ -20,4 +21,24 @@ int main(){
         }
     }
     cout<<dp[n]<<endl;
+}
+*/
+
+//space optimised solution
+int main(){
+    const int mod =1e9+7;
+    int n;
+    cin>>n;
+
+    vector<int> previous = {1};
+
+    for(int i = 1; i <= n ; i++){
+        int current = 0 ;
+        
+        for(int j : previous) current = (current+j) % mod ;
+        
+        previous.push_back(current);
+        if(previous.size()>6) previous.erase(previous.begin());
+    }
+    cout<<previous.back()<<endl;
 }
